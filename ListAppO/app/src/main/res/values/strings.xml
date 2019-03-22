@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">List App Alex P</string>
+
+    <string-array name="items">
+        <item>Peach</item>
+        <item>Tomato</item>
+        <item>Squash</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$0.99</item>
+        <item>%1.49</item>
+        <item>$0.89</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Fresh peaches from Georgia</item>
+        <item>Juicy tomatoes from Florida</item>
+        <item>Yellow squash from California</item>
+    </string-array>
+
+</resources>

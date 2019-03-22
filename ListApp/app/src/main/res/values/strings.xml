@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Creative List App Alex P</string>
+
+    <string-array name="items">
+        <item>Dell XPS 13</item>
+        <item>Alienware Area 51m</item>
+        <item>Huawei Matebook D</item>
+    </string-array>
+
+    <string-array name="prices">
+        <item>$899.99</item>
+        <item>$1949.99</item>
+        <item>$549.99</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>
+            CPU: Intel® Core™ i3-8145U
+            GPU: Intel® UHD Graphics 620
+            RAM: 4GB LPDDR3 2133MHz
+            Storage: 128GB M.2 PCIe NVMe Solid State Drive
+        </item>
+        <item>
+            CPU: Intel® Core™ i7-8700
+            GPU: NVIDIA® GeForce RTX™ 2060
+            RAM: 8GB, 2x4GB, DDR4, 2400MHz
+            Storage: 1TB (+8GB SSHD)
+        </item>
+        <item>
+            CPU: AMD Ryzen 5 2500U
+            GPU: AMD Radeon Vega 8
+            RAM: 8 GB DDR4
+            Storage: 256 GB SSD
+        </item>
+    </string-array>
+
+</resources>
