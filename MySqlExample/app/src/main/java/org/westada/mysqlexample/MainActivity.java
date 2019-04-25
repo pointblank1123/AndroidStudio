@@ -53,11 +53,10 @@ public class MainActivity extends AppCompatActivity {
         static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
         static final String DB_URL = "jdbc:mysql://" +
             DbStrings.DATABASE_URL + "/"+ DbStrings.DATABASE_NAME;
-        private String[] strings;
 
         @Override
         protected void onPreExecute(){
-            progressTextView.setText("Connecting to Database");
+            progressTextView.setText("Connecting to Database...");
         }
 
         @Override
@@ -70,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
                 conn = DriverManager.getConnection(DB_URL, DbStrings.USERNAME, DbStrings.PASSWORD);
 
                 stmt = conn.createStatement();
-                String sql= "SELECT * FROM fruits";
+                String sql = "SELECT * FROM fruits";
                 ResultSet rs = stmt.executeQuery(sql);
 
                 while(rs.next()){
-                    String name = rs.getString("name");
+                    String name = rs.getString("fruitname");
                     double price = rs.getDouble("price");
 
-                    fruitsMap.put(name,price);
+                    fruitsMap.put(name, price);
                 }
                 msg="Process complete";
 
@@ -96,19 +95,18 @@ public class MainActivity extends AppCompatActivity {
             }
             finally{
                 try{
-                    if(stmt!=null){
+                    if(stmt != null){
                         stmt.close();
                     }
-                }
-                catch(SQLException e){
+                } catch(SQLException e){
                     e.printStackTrace();
                 }
+
                 try{
                     if(conn != null){
                         conn.close();
                     }
-                }
-                catch(SQLException e){
+                } catch(SQLException e){
                     e.printStackTrace();
                 }
 
